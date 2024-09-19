@@ -1,0 +1,12 @@
+Test Case No,Test Case Name,Test Case Description,Input in string,Expected Output in string
+TC1,ExpectZeroForEmptyInput,This test case takes an input and checks if it is a empty string and returns 0 if the string is empty,"""""",0
+TC2,ExpectZeroForSingleZero,This test case takes an input and checks if it is a single zero and returns 0 ,"""0""",0
+TC3,ExpectSumForTwoNumbers,This test case takes the input of two numbers separated with comma and gives the sum of two numbers as OutPut ,"""1,2""",3
+TC4,ExpectExceptionForNegativeNumbers,This test case takes the input of the string and should throw an exception if a negative number is included,"-1,2",Negatives not allowed: -1
+TC5,ExpectSumWithNewlineDelimiter,this test case takes the input of the string and should recognize a custom delimiter and sum the numbers correctly,"1\n2,3",6
+TC6,IgnoreNumbersGreaterThan1000,This test case takes the input and checks the number if it is greater than 1000 and it ignores and gives the sum of the rest of the number ,"""1,1001""",1
+TC7,ExpectSumWithCustomDelimiter,This test case takes the input of the string and should recognize a custom delimiter and sum the numbers correctly,"""//;\n1;2""",3
+TC8,ComplexDelimiterofVaryingLength,This test case takes the input of the string and should support delimiters of varying lengths and sum correctly,"""//[***]\n12***3""",15
+TC9,Large Input with Valid and Invalid Numbers,This test case takes the input of the string and should ignore 2000 and throw an exception for -1,"""1000,2000,3,-1""",Negatives not allowed: -1
+TC10,Valid Input with Ignored Large Numbers,"This test case takes the input of the string and  should return the sum of valid numbers, ignoring 1001","""2,1000,1001""",1002
+TC11,Trailing Comma and Newline,This case should not raise an error; the trailing comma and newline should be ignored.,"""1,\n""",1
